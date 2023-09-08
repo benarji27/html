@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        table {
+            width:80%;
+            margin: 20px;
+            padding-left:0px;
+            border-collapse: 1px;
+        }
+
+        tr,td {
+            padding: 1px;
+            text-align:left;
+        }
+        tr.right-aligned td {
+            text-align: right;
+        }
+        .container{
+            text-align: center;
+        }
+        .input-cell{
+            border:none;
+            padding:0;
+            margin:0;
+            width:100%;
+        }
+        .label-cell{
+            text-align : center;
+        
+        }
+        .spilt-row{
+            border-top:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+        <table border="1">
+            <tr>
+                <td class="label-cell">First Name</td>
+                <td><input type="text" class="input-cell" name="textbox"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Last Name</td>
+                <td><input type="text"  class="input-cell" name="textbox"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">E-mail</td>
+                <td><input type="email"  class="input-cell"  name="email"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Password</td>
+                <td><input type="password"  class="input-cell" name="password"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Re-enter Password</td>
+                <td><input type="re_password"  class="input-cell" name="re_password"></td>
+            </tr>
+            
+            <tr class="split-row">
+                <td class="label-cell">Gender</td>
+                <td >
+                    <input type="radio" name="gender" value="Male">Male<br>
+                    <input type="radio" name="gender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Age</td>
+                <td><input type="text"  class="input-cell" name="textbox"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Phone Number</td>
+                <td><input type="text" class="input-cell"  name="textbox"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Address</td>
+                <td><textarea rows="4"  class="input-cell" ;></textarea></td>
+            </tr>
+
+            <tr>
+                <td class="label-cell">State</td>
+                <td><input type="text" class="input-cell"  name="textbox"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Country</td>
+                <td>
+                    <select name="dropdown" >
+                        <option value="" disabled selected>Choose your country</option>
+                        <option value="Option1">India</option>
+                        <option value="Option2">USA</option>
+                        <option value="Option3">Russia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Languages Known</td>
+                <td><input type="checkbox" name="checkbox">English
+                <input type="checkbox" name="checkbox">Kannada
+                <input type="checkbox" name="checkbox">Hindhi
+                <input type="checkbox" name="checkbox">Telugu</td>
+            </tr>
+            <tr>
+            
+              <td colspan="2">  <input type="checkbox" name="myCheckbox" value="checked" checked> Hereby I declare all the given details are true
+            </td>
+            </tr>
+            <tr class="right-aligned">
+                <td colspan="2" >Log in to <a href="https://www.ethnus.com">Ethnus</a> website</td>
+            <!-- Add more rows with different form elements as needed -->
+        </table>
+        <div class="container">
+        <input type="button" value="Register">
+        </div>
+    </form>
+</body>
+</html>
